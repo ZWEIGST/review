@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    background-color: rgb(9, 89, 109);
+    font-family: 'Tilt Neon', cursive;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.img {
+    width: 560px;
+    height: 340px;
+    display: block;
+    background-image: url(https://talkmediaafrica.com/wp-content/uploads/2017/10/The-Durrells_S2_Generic_Family-Shots_23.jpg);
+    background-size: contain;
+    box-shadow: 0 0 5px 2px #2e3341;
+    &-text {
+    color:aqua;
+    font-size: 1rem;
+    }
+}
+
+.rating__container {
+    width: 500px;
+    position: center;
+    background: rgba(181, 227, 236, 0.616);
+    padding: 20px 30px;
+    border: none;
+    border-radius: 0.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 5px 2px #2e3341;
+}
+
+.rating__box {
+    display: none;
+}
+
+.rating__container,
+.rating__text {
+    font-size: 1.75rem;
+    color: rgb(49, 94, 185);
+    font-weight: 400;
+}
+
+.rating-error{
+    display: none;
+    width: 280px;
+    font-size: 1rem;
+    color: #141413;
+    background: rgba(214, 204, 58, 0.719);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #ece91b;
+}
+
+form .raiting-box {
+    width: 100%;
+    font-size: 1.5rem;
+    color: #fe7;
+    font-weight: 400;
+    margin: 8px 0 20px 0;
+    padding: 1rem;
+    text-align: center;
+    transition: all .2s ease;
+}
+  
+form .text__area {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.comment {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #d8db22;
+    border: 2px solid rgb(204, 216, 98);
+    background: rgb(119, 175, 207);
+    padding: 10px;
+    font-size: 1rem;
+    resize: none;
+}
+
+form .btn {
+    height: 3rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+form .btn button {
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(219, 230, 76);
+    outline: none;
+    background: rgb(45, 145, 203);
+    color: rgb(219, 208, 45);
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+form .btn button:hover {
+    background: rgb(34, 114, 160);
+}
+
+.rating {
+    display: flex;
+    align-items: flex-end;
+    font-size: 2.5rem;
+    line-height: 0.9;
+}
+
+.rating__body {
+    position: relative;
+}
+.rating__body::before {
+    content: "★★★★★";
+    display: block;
+}
+.rating__value {
+    font-size: 50%;
+    line-height: 0.8;
+    padding:  0px, 0px, 0px, 10px;
+}
+
+.rating__items {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.rating__item {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0;
+    &-text {
+    font-size: 1rem;
+    }
+}
+.rating__active {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.rating__active::before {
+    content: "★★★★★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: rgb(233, 255, 37);
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

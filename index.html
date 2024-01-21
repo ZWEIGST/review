@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гостевой дом острова Корфу</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="content">
+        <div class="img">
+            <h2 class="img-text">Гостевой дом семейства Дарреллов</h2>
+        </div>
+        <div class="rating__container">
+            <div class="rating__box">
+                <div class="rating__text">Спасибо, что поделились своей оценкой</div>
+
+            </div>
+                <div class="rating rating_set">
+                    <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                            <input type="radio" class="rating__item rating__item_description_1" data-toggle="rating__item_text1" name="rating" value="1">
+                            <input type="radio" class="rating__item rating__item_description_2" data-toggle="rating__item_text2" name="rating" value="2">     
+                            <input type="radio" class="rating__item rating__item_description_3" data-toggle="rating__item_text3" name="rating" value="3">
+                            <input type="radio" class="rating__item rating__item_description_4" data-toggle="rating__item_text4" name="rating" value="4">
+                            <input type="radio" class="rating__item rating__item_description_5" data-toggle="rating__item_text5" name="rating" value="5">
+                              
+                        </div>
+                    </div>
+
+                    <div class="rating__value">2.8</div>
+                    <div>
+						<p class="rating__item_text"><p>
+					</div>
+                    
+                </div> 
+
+
+
+
+                <form class="rating-box" action="#">
+                    
+                    <div class="rating-error">Проверьте, пожалуйста, чтобы Ваши впечатления составляли не менее 10 символов</div>
+                    <div class="text__area">
+                        <textarea class="comment" cols="30" placeholder="Опишите свои впечатления"></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Поделиться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
